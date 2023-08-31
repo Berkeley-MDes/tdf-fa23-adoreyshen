@@ -16,7 +16,7 @@ thickness: 11mm
 
 Then I input all those data into the Grasshopper file
 
-![Grasshopperphonedimension](weekly-reports/phonedimension.jpg)
+![Grasshopperphonedimension](weekly-reports/phonedimension.png)
 
 I picked 1/4" plywood as material since it's cheap (🫢) and five people shared one board!
 
