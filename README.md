@@ -16,9 +16,9 @@ The progress photos from this week are shown below!
 I first measured my phone's dimension (with my phone case on), since my case is a pretty standard one, it doesn't require much changing in width and thickness.
 So my tweaked design's dimensions are:
 
-width: 76mm
-length: 165mm
-thickness: 11mm
+width: 76mm  
+length: 165mm  
+thickness: 11mm  
 
 
 Then I input all those data into the Grasshopper file
