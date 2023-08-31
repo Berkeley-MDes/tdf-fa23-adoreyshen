@@ -1,5 +1,5 @@
 # Week 1 Report - Week of 08/31/2023
-## Technology Design Foundations
+## Technology Design Foundations  
 
 
 ### Intro & summary
