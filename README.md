@@ -5,7 +5,9 @@
 ### Intro & summary
 
 This week, I explored Rhino and Grasshopper to make a little change on the existing phone stand design. I also laser cutted the tweaked version of the phone stand.
-The progress photos from this week are shown below!
+The progress photos from this week are shown below!     
+
+
   
 
 
