@@ -14,16 +14,19 @@ width: 76mm
 length: 165mm
 thickness: 11mm
 
+Then I input all those data into the Grasshopper file
+
+![Grasshopperphonedimension](weekly-reports/phonedimension.jpg)
 
 I picked 1/4" plywood as material since it's cheap (🫢) and five people shared one board!
 
 
 Here's how it looks!
-![phonestand](weekly-reports/frontview.jpg)! [phonestand](weekly-reports/backview.jpg)
 
-Change the parameters to fit your phone
-Try to generate a file to laser cut, OR a 3D print for Thursday (see “Bake” and “export”)
-Homework Due Thursday 8/31/23 at 3p
+![phonestand](weekly-reports/frontview.jpg)
+![phonestand](weekly-reports/backview.jpg)
+
+
 
 Work on your weekly Progress Report
 please include images of attempts to tweak file, & images of laser cut objects (if you are successful)
