@@ -1,7 +1,7 @@
 # Week 1 Report - Week of 08/31/2023
 ## Technology Design Foundations
 
-## Descritions
+
 This week, I explored Rhino and Grasshopper to make a little change on the existing phone stand design. I also laser cutted the tweaked version of the phone stand.
 The progress photos from this week are shown below! 
 
@@ -14,7 +14,9 @@ thickness: 11mm
 
 I picked 1/4" plywood as material since it's cheap (🫢) and five people shared one board!
 
-Spend time in Rhino
+Here's how it looks!
+
+
 Change the parameters to fit your phone
 Try to generate a file to laser cut, OR a 3D print for Thursday (see “Bake” and “export”)
 Homework Due Thursday 8/31/23 at 3p
