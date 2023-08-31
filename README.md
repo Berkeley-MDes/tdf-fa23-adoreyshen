@@ -1,18 +1,36 @@
-# Week 1 Report (08/31)
+# Week 1 Report - Week of 08/31/2023
 ## Technology Design Foundations
 
-If you’re new to GitHub, you can think of this as a shared file space (like a Google Drive folder, or a like a USB drive that’s hosted online.) 
+## Descritions
+This week, I explored Rhino and Grasshopper to make a little change on the existing phone stand design. I also laser cutted the tweaked version of the phone stand.
+The progress photos from this week are shown below! 
 
-This is your space to store project files, videos, PDFs, notes, images, etc., and (hopefully, neatly) organize so it's easy for viewers (and you!) to navigate. That said, it’s super easy for you to share any file or folder with us (your TDF instructional team) - just send us the link! 
+I first measured my phone's dimension (with my phone case on), since my case is a pretty standard one, it doesn't require much changing in width and thickness.
+So my tweaked design's dimensions are:
 
-The specific file that I’m typing into right now is the **README.md** for this repo. 
-##### (💡 TIP: The .md indicates that we’re using [Markdown formatting.](https://www.markdownguide.org/cheat-sheet/)) #####
-<h6> (💡 TIP 2: GitHub Markdown supports <a href="https://gist.github.com/seanh/13a93686bf4c2cb16e658b3cf96807f2"> <em>HTML formatting</em> too, including emojis 😄</a>, in case that helps!) </h6>
+width: 76mm
+length: 165mm
+thickness: 11mm
 
-### :star: Whatever you write in your **README.md** will show up on the “front page” of your GitHub repo. This is where we’ll be looking for your [weekly progress reports](https://github.com/Berkeley-MDes/desinv-202/wiki/3.0-Weekly-Submissions). They might look something like this: ###
----
-# Example Report 1 - Week of 08/21/2023 #
-This week, I designed a cool phone stand made of rocks. Check out all my cool sketches and progress photos from this week below, etc., etc....
+I picked 1/4" plywood as material since it's cheap (🫢) and five people shared one board!
+
+Spend time in Rhino
+Change the parameters to fit your phone
+Try to generate a file to laser cut, OR a 3D print for Thursday (see “Bake” and “export”)
+Homework Due Thursday 8/31/23 at 3p
+
+Work on your weekly Progress Report
+please include images of attempts to tweak file, & images of laser cut objects (if you are successful)
+reflect on the experience of exploring a procedural model whose output is a cell phone stand design in Rhino
+Consider: What other contextual observations would be useful to capture?
+Consider: What other evaluations of results would be useful to provide as feedback?
+Consider: Are there points in the process where you think AI…
+Could be used to assist?
+Could be trained on input and output?
+Other?
+
+
+
 
 <img width="200" alt="Cool Phone Stand made of rocks" src="https://github.com/s-almeda/tdf-template-repo/assets/21287693/bc2f1864-af5a-456d-9a71-e1d80d51190c">
 
