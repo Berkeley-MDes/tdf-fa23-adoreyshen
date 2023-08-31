@@ -2,8 +2,10 @@
 ## Technology Design Foundations
 
 
+
 This week, I explored Rhino and Grasshopper to make a little change on the existing phone stand design. I also laser cutted the tweaked version of the phone stand.
 The progress photos from this week are shown below! 
+
 
 I first measured my phone's dimension (with my phone case on), since my case is a pretty standard one, it doesn't require much changing in width and thickness.
 So my tweaked design's dimensions are:
@@ -12,10 +14,12 @@ width: 76mm
 length: 165mm
 thickness: 11mm
 
+
 I picked 1/4" plywood as material since it's cheap (🫢) and five people shared one board!
 
-Here's how it looks!
 
+Here's how it looks!
+![phonestand](mooncake.png)
 
 Change the parameters to fit your phone
 Try to generate a file to laser cut, OR a 3D print for Thursday (see “Bake” and “export”)
