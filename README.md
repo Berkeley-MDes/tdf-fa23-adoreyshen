@@ -3,11 +3,13 @@
 
 
 ### Intro & summary
+
 This week, I explored Rhino and Grasshopper to make a little change on the existing phone stand design. I also laser cutted the tweaked version of the phone stand.
 The progress photos from this week are shown below! 
 
 
 ### Progress description
+
 I first measured my phone's dimension (with my phone case on), since my case is a pretty standard one, it doesn't require much changing in width and thickness.
 So my tweaked design's dimensions are:
 
