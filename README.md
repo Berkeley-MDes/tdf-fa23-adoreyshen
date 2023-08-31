@@ -47,11 +47,11 @@ However, I do believe this procedural model can be really powerful when we are t
 Some of my considerations:
 
 1. What other contextual observations would be useful to capture?
-
+It can be the distance and angle between the center of the screen to the focus point of the user's view. Also maybe the estimated using time since longer using time may cause posture change of user. It can also relates to the height of the user's chair (or the height extending from the table depending on user's height)
 
 
 2. What other evaluations of results would be useful to provide as feedback?
-
+It can be subjective like how fatigue the user feels after using the setup.
 
 3. Are there points in the process where you think AI…
    Could be used to assist? & Could be trained on input and output?
