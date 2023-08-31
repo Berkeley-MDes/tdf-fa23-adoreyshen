@@ -19,7 +19,7 @@ I picked 1/4" plywood as material since it's cheap (🫢) and five people shared
 
 
 Here's how it looks!
-![phonestand](mooncake.png)
+![phonestand](frontview.jpg)
 
 Change the parameters to fit your phone
 Try to generate a file to laser cut, OR a 3D print for Thursday (see “Bake” and “export”)
