@@ -41,6 +41,7 @@ The flow map in Grasshopper is massive and I only got to explore the few paramet
 
 However, I do believe this procedural model can be really powerful when we are trying to model a CAD in the context of many external factors. Instead of tweaking the specific dimensions manually in the CAD, this method helps a lot to save time for iterations under different scenarios. Moreover, its 'adaptive' function and Rhino's way of showing everything together definitely makes the connection of every factors more visually intuitive to understand.
 
+
 Some of my considerations:
 
 1. What other contextual observations would be useful to capture?
@@ -48,10 +49,13 @@ Some of my considerations:
 
 
 2. What other evaluations of results would be useful to provide as feedback?
+
+
 3. Are there points in the process where you think AI…
-4. Could be used to assist?
-5. Could be trained on input and output?
-Other?
+   Could be used to assist? & Could be trained on input and output?
+   
+   AI can definitely be combined with this process to make the iterative progress more smart. A direct feedback loop can be set up and AI can iterate within the range till it hits the 'sweet spot' range set up by the user. It can be further trained to suggest a more reasonable input and therefore generate a more accurate output.
+
 
 
 
