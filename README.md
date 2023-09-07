@@ -89,8 +89,6 @@ It can be subjective like how fatigue the user feels after using the setup.
     
 
 # Week 2 Report - Week of 09/07/2023
-## Technology Design Foundations  
-
 
 ## Intro & summary
 
@@ -112,6 +110,8 @@ Although I've done CAD before, but the logic of CADing in Solidworks and OnShape
 
 
 </br>
+</br>
+
 
 I firsly went through some basic tutorial videos on both Rhino's websites and YouTube, then tried to make something myself without following the tutorial (will be explained in the next section!).   
 </br>
