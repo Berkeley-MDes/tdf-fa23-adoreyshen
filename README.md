@@ -67,3 +67,46 @@ It can be subjective like how fatigue the user feels after using the setup.
 
 
 
+
+
+
+
+
+# Week 2 Report - Week of 09/07/2023
+## Technology Design Foundations  
+
+
+### Intro & summary
+
+This week, I mainly focused on getting to know Rhino (and enjoyed the Labour Day weekend😁!). I watched some tutorials on Rhino on basic funcstions, and managed to design something (a hair dryer holder) with it. I also thought about the possible changes for the existing phone holder design to make it more user friendly.
+
+
+
+### Progress description  
+
+##### About Rhino  
+
+Although I've done CAD before, but the logic of CADing in Solidworks and OnShape is a lot different than the one Rhino uses. So I took some time and firstly watched some tutorials to get to know Rhino.   
+
+<img width="1401" alt="Screenshot 2023-09-07 at 1 47 45 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/1e62e835-323d-4971-94ea-2bd2a4501e24">
+
+<img width="1474" alt="Screenshot 2023-09-07 at 1 51 18 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/08869cb2-50ea-4afb-a236-37d80d15647a">
+
+I firsly went through some basic tutorial videos on both Rhino's websites and YouTube, then tried to make something myself without following the tutorial (will be explained in the next section!).   
+
+After getting to know Rhino a little, I realise that instead of making a 2D sketch than extrude it, Rhino uses points to make lines, lines to make planes, and planes to make volume. I guess this logic gives Rhino more freedom when designing complicated shapes with many curves. Because based on my previous experiences with Solidworks/OnShape, it is ok to do regular shape modelling, but quite difficult and inconvinient to do fancy curvy shapes. I hope in the future when comes to designing something really curvy and complicated in shape, I can explore those fancy features in Rhino!
+
+
+
+##### About the hair dryer holder  
+
+Since I want to do something completely myself, my plan is to make something new through Rhino and 3D print it out later. What comes into my mind is a hair dryer holder since I kinda need it and don't wanna spend about 20 bucks on Amazon just to buy a simple holder...🤷🏻‍♀️ 
+
+<img width="1512" alt="Screenshot 2023-09-07 at 1 46 58 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/703b50cd-3f03-4c58-bf26-33b23481194b">
+
+
+
+
+
+
+
