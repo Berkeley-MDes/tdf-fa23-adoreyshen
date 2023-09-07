@@ -64,6 +64,11 @@ It can be subjective like how fatigue the user feels after using the setup.
 
    
    AI can definitely be combined with this process to make the iterative progress more smart. A direct feedback loop can be set up and AI can iterate within the range till it hits the 'sweet spot' range set up by the user. It can be further trained to suggest a more reasonable input and therefore generate a more accurate output.
+   
+
+   
+   
+   
 
 
 
