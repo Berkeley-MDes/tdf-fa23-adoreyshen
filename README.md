@@ -68,9 +68,16 @@ It can be subjective like how fatigue the user feels after using the setup.
 
 
 
+         
 
 
 
+
+
+
+
+
+    
 
 # Week 2 Report - Week of 09/07/2023
 ## Technology Design Foundations  
@@ -84,23 +91,55 @@ This week, I mainly focused on getting to know Rhino (and enjoyed the Labour Day
 
 ### Progress description  
 
-##### About Rhino  
+#### About Rhino  
 
 Although I've done CAD before, but the logic of CADing in Solidworks and OnShape is a lot different than the one Rhino uses. So I took some time and firstly watched some tutorials to get to know Rhino.   
 
-<img width="1401" alt="Screenshot 2023-09-07 at 1 47 45 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/1e62e835-323d-4971-94ea-2bd2a4501e24">
+<img width="1401" alt="Screenshot 2023-09-07 at 1 47 45 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/1e62e835-323d-4971-94ea-2bd2a4501e24">  
 
-<img width="1474" alt="Screenshot 2023-09-07 at 1 51 18 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/08869cb2-50ea-4afb-a236-37d80d15647a">
+
+<img width="1474" alt="Screenshot 2023-09-07 at 1 51 18 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/08869cb2-50ea-4afb-a236-37d80d15647a">  
+
 
 I firsly went through some basic tutorial videos on both Rhino's websites and YouTube, then tried to make something myself without following the tutorial (will be explained in the next section!).   
 
-After getting to know Rhino a little, I realise that instead of making a 2D sketch than extrude it, Rhino uses points to make lines, lines to make planes, and planes to make volume. I guess this logic gives Rhino more freedom when designing complicated shapes with many curves. Because based on my previous experiences with Solidworks/OnShape, it is ok to do regular shape modelling, but quite difficult and inconvinient to do fancy curvy shapes. I hope in the future when comes to designing something really curvy and complicated in shape, I can explore those fancy features in Rhino!
+After getting to know Rhino a little, I realise that instead of making a 2D sketch than extrude it, Rhino uses points to make lines, lines to make planes, and planes to make volume. I guess this logic gives Rhino more freedom when designing complicated shapes with many curves. Because based on my previous experiences with Solidworks/OnShape, it is ok to do regular shape modelling, but quite difficult and inconvinient to do fancy curvy shapes. I hope in the future when comes to designing something really curvy and complicated in shape, I can explore those fancy features in Rhino!  
 
 
 
-##### About the hair dryer holder  
 
-Since I want to do something completely myself, my plan is to make something new through Rhino and 3D print it out later. What comes into my mind is a hair dryer holder since I kinda need it and don't wanna spend about 20 bucks on Amazon just to buy a simple holder...🤷🏻‍♀️ 
+#### About the hair dryer holder  
+
+Since I want to do something completely myself, my plan is to make something new (but simple so it's managable) through Rhino and 3D print it out later. What comes into my mind is a hair dryer holder since I kinda need it and don't wanna spend about 20 bucks on Amazon just to buy a simple holder...🤷🏻‍♀️   
+
+Let me explain the idea a bit more: It is a simple hair dryer holder that simply sticks to the wall in my bathroom and can hold my hair dryer so it does't stay on the table sink anymore. I did some market research on Amazon first and found out most ones are like this:  
+
+<img width="862" alt="Screenshot 2023-09-07 at 2 04 34 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/63cf7110-a9a3-43aa-8a79-fa4b4b4e2d7a">  
+
+But what I have in my mind is just something that sticks out in the middle so can utilise the hollow middle space of the dyson hair dryer! So I CADed it out using Rhino and here's how it looks :
+
+
+<img width="1512" alt="Screenshot 2023-09-07 at 2 06 22 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/df82fe7c-7597-4619-bcd4-c863421cf52c">  
+
+I basically want the back to be big so I can stick enough 3M strips to make it strong enough to attach to the wall (rented apartment can't destroy the wall😢), then I want the sticking out cylinder part to be similar diameter with the hollow part of the hair dryer so it can fit nicely and hang on it.   
+  
+    
+<img width="981" alt="Screenshot 2023-09-07 at 2 13 02 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/ee0a7888-0e6e-4ad1-824c-6611bfbb52db">  
+
+
+It's a simple design but I do get to explore some basics like Gumball, how to dimension exactly, how to snap points to the places I want, and how to extrude and fillet edges etc. To me it's a simple but helpful exploration!  
+
+
+Then I downloaded an existing CAD model of dyson hair dryer and assembled it with my design to see whether it fit:  
+
+<img width="474" alt="Screenshot 2023-09-07 at 2 10 05 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/ae2ee560-f0c6-4d85-9cf4-6fb2867a0ad1">
+
+
+It looks quite nice to me! So I export it as stl file and sliced it with Cura to get the GCode  
+
+<img width="1512" alt="Screenshot 2023-09-07 at 2 16 57 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/29a0f6b0-cb8c-4ba8-963c-d9dd9b32b9fd">  
+
+It's now ready to print
 
 <img width="1512" alt="Screenshot 2023-09-07 at 1 46 58 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/703b50cd-3f03-4c58-bf26-33b23481194b">
 
