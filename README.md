@@ -234,13 +234,14 @@ So in order to attach the MagSafe accessory, I engraved the top board to leave a
 
 ## Challenges
 The challenges I encountered were mainly with Grasshopper. Because I am completely new to this, it took me a while to get on the right track. (really long🤕) There are four different pieces in total, each with a relatively complicated geometry. 
+![10](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/31640424-f7fc-4b06-8649-391f042a3f4a)
 
-![](Screenshot%202023-09-14%20at%202.21.18%20PM.png)  
+
 
   
 I made it by doing individual geometry sketches and then extruding it in Grasshopper. I made each part individually and then joined them together.
 
-![10](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/bd0d28d1-a517-4ae0-bd72-fc6fd66194d7)
+![11](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/65e948b2-7957-41d5-9903-58e602cfee0d)
 
 
 For example, this is the geometry of one part (the bottom base)
