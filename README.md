@@ -165,9 +165,92 @@ It's now ready to print. I am going to print it out tmrw and will post finished 
 </br>
 
 
+</br>
+</br>
+</br>
+</br>
+
+# Week 3 Report - Week of 09/14/2023
+
+## Intro & summary
+
+This week, I finalised Project 1 by making a new phone holder! It is a completely new design targeting to fix the problems with the previous one. And I also made a video about this 👉 [Adorey TDF Project 1](https://youtu.be/E8s9kIxx-nU) 
 
 
 
+## Progress description
+
+The problem with the previous one is that it can block part of your screen due to the holding rack, and the angle of your phone is completely fixed:
+<img width="1006" alt="1" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/2f2419b7-316b-4395-a496-32287ac079b5">
+
+
+#### To make it adjustable
+I started my idea of making the angle adjustable. I think this function can be really important to me as I use my phone in various situations: I may look at it while standing up, or record myself doing something so the screen (also the camera) needs to face me. To make the angle adjustable, I began to explore the possible mechanisms, and a simple slot cam mechanism caught my interest: it’s simple enough so I can CAD it with Grasshopper (this is the key, grasshopper is too difficult for me 🥲), and it can be achieved easily with laser cutting! 
+
+The slot cam looks something like this  
+![1 5](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/651185d8-babc-4d4b-93b2-b6daa02795ad)
+
+The slot will follow the curvature of the cam, so I can apply this to constrain the range of angles I want. I then first started CADing the rack with slot cam in it, it looks like this:
+
+![2](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/75fc6132-cf8a-4f3e-aabe-bede2a1a80fa)
+
+and the connector part for the slot cam
+![3](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/d896c7c7-bf93-445e-b622-90f53095649d)
+
+
+I made the curvature of the slot match the range of motion I want. It can go from 52 degrees to 93 degrees. I also positioned the location of the slot where the lowest position won’t clash with the racks.
+
+<img width="1066" alt="3 5" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/31e09582-27b5-46b2-bfa0-9b82fb2be563">
+
+
+#### Less screen blocking
+After making the angle adjustable, I need to solve the problem of the “racks” blocking part of the screen while holding to it. Since the angle can be perpendicular, or even the phone can face down, you would need both hinges to hold tight the phone.   
+![4](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/2b461dd7-8848-47b9-a280-1e376adb7c64)  
+<img width="875" alt="5" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/4e28935e-66af-4438-bc64-8929b535cce8">
+
+
+
+But with the hinges, it will definitely block part of the screen, and the attachment and detachment of the phone will be less straightforward. 😨
+
+So one of my phone accessories caught my mind: MagSafe! I can use the built-in magnet of iPhone to make it strongly attaches to the holder, capable of hanging at any angle.
+
+![6](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/a0bd4c79-901b-419d-93ed-e2cf0ed2bd6b)
+
+
+and can even let it rotate from landscape view to portrait view!
+
+![7](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/19926281-5aee-4bad-ba34-48cfc3f0aeee)
+
+
+
+So in order to attach the MagSafe accessory, I engraved the top board to leave a space for sticking it:
+![8](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/415f669a-5a31-4d09-bbfd-6c9662e50ae2)
+
+
+#### So the overall phone holder looks like this:
+
+<img width="601" alt="9" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/7bf3bc5a-8683-48d4-97a3-c05ac64c9f38">
+
+
+## Challenges
+The challenges I encountered were mainly with Grasshopper. Because I am completely new to this, it took me a while to get on the right track. (really long🤕) There are four different pieces in total, each with a relatively complicated geometry. 
+
+![](Screenshot%202023-09-14%20at%202.21.18%20PM.png)  
+
+  
+I made it by doing individual geometry sketches and then extruding it in Grasshopper. I made each part individually and then joined them together.
+
+![10](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/bd0d28d1-a517-4ae0-bd72-fc6fd66194d7)
+
+
+For example, this is the geometry of one part (the bottom base)
+
+
+There was also a small issue I had when trying to laser cut: the actual thickness of the plywood was less than it said, making the gap I left for insertion too wide. It is supposed to be 1/4 inch which is 6.35mm, but it was only 5.35mm (annoying🫠). So I had to modify the ai. file at the last minute, and the dimensions are still a bit off. I glued the insertion part just to make them less flimsy. 
+
+
+## Conclusion
+It was a good attempt to try everything with grasshopper. Also it was really fun to play with the mechanical mechanisms. I think this phone holder can be a really useful item in my daily life now hehe☺️ For more detailed description of the project, it will be in the PDF file later!
 
 
 
