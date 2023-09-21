@@ -254,5 +254,32 @@ There was also a small issue I had when trying to laser cut: the actual thicknes
 It was a good attempt to try everything with grasshopper. Also it was really fun to play with the mechanical mechanisms. I think this phone holder can be a really useful item in my daily life now hehe☺️ For more detailed description of the project, it will be in the PDF file later!
 
 
+</br>
 
+
+</br>
+</br>
+</br>
+</br>
+
+# Week 4 Report - Week of 09/21/2023
+
+## Intro & summary
+
+This week, we finished the previous computational design project and started with the microcontroller ecosystem project! I also finally printed the hair dryer holder from week 2😛.  
+
+
+
+## Progress description
+
+Since the project is still at beginning, I just followed the tutorial to set up the photon 2 microcontroller. I also explored some exisitng projects online to get some inspiration for the potential project. 
+
+And for the printed hair dryer holder! Here it is:
+
+![IMG_5456](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/574575e0-656f-434d-983c-258c26a46bcc)
+![IMG_5455](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/dd470ad7-9740-4168-9f66-efca210380f9)
+![IMG_5454](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/316aed91-70c3-49bd-bafe-387662ba9f38)
+
+
+It worked very nicely! And the big base provides bigger surface for my Command stripes to work nicely~
 
