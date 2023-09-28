@@ -283,3 +283,54 @@ And for the printed hair dryer holder! Here it is:
 
 It worked very nicely! And the big base provides bigger surface for my Command stripes to work nicely~
 
+
+
+</br>
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 5 Report - Week of 09/28/2023
+# Intro & Summary
+This week, we did an idea-generation session on Monday, and when I was selecting the potential projects I may work on, I did some research on the feasibility of the projects and what are the potential methods to achieve it.  
+
+# Progress description
+The first choice of mine is the flower that opens up and closes down to help people meditate. The idea was proposed by my group, and the rough idea in my mind was to make a physical mechanical flower that mimics the Breathe app user interface in Apple Watch:  
+
+![result-6](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/80bebd47-e5ca-46aa-84b1-fda97b448095)
+
+
+
+A potential physical mechanism can be something like this:
+
+![Telling+the+time+02](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/feb93ac6-face-4db1-a833-88a6a0d0eac2)
+
+
+It is a design of a dynamic clock, but it uses a stepper motor to drive the ‘flower’ mechanism open and close and make it sync with the actual time in settings.
+
+My idea can be similar to this, but instead of syncing with time, it can be the pace of meditation breathing and a separate device that vibrates and can be worn by users to guide the meditation session. A speaker can even be added to play soothing music and guide the meditation session better.
+
+
+The second idea I chose is the wind chime. Since the project is more art-oriented to me, it doesn’t have a specific input yet that will cause the wind chime to play. Some factors in my mind would be: 
+
+1. humidity sensor - so that when the air is wet it will play specific tunes to match the mood
+2. LDR - so when sunlight is at different intensities it will play specific tunes to match the mood
+3. or a remote keyboard as TUI for users to input their wanted tunes!
+
+Something that may look like this: [Arduino Controlled Wind Chimes](https://www.instructables.com/Arduino-Controlled-Wind-Chimes/)   
+
+![hqdefault](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/ce649f23-fac6-43ee-9c7c-bc56b66e409f)
+
+
+The thrid choice I picked is the smart lock system. The concept is really useful and the first thing that come to my mind is switchbot door lock!
+
+![c646ed8c-d770-4515-a530-41bca0e14b0d __CR0,0,2400,1800_PT0_SX600_V1___ png](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/9d831065-f9b4-41be-879f-85ebe9e4a40e)
+
+
+I’ve been using it for a while and it’s really useful! It’s a mechanism that fits universally to a door lock and turns by certain degrees to lock it. So according to user settings, it can do self-locking, and unlocked easily by phone apps. 
+
+We can achieve this by Photon by designing a door-lock fit mechanism and attach it to a stepper motor, and make the input trigger by a remote control: like a button for users to push, or even a NFC chip that works when the phone gets closer to the sticker!
