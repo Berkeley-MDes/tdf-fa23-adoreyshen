@@ -334,3 +334,20 @@ The thrid choice I picked is the smart lock system. The concept is really useful
 I’ve been using it for a while and it’s really useful! It’s a mechanism that fits universally to a door lock and turns by certain degrees to lock it. So according to user settings, it can do self-locking, and unlocked easily by phone apps. 
 
 We can achieve this by Photon by designing a door-lock fit mechanism and attach it to a stepper motor, and make the input trigger by a remote control: like a button for users to push, or even a NFC chip that works when the phone gets closer to the sticker!
+
+
+</br>
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 6 Report - Week of 10/05/2023
+# Intro & Summary
+This week we worked further through our idea! Including both ideation and technical solutions!  
+The detailed project specification is right here: https://docs.google.com/document/d/1IRLeagtgZijVZ8jcxHtoBIZcy9kE9jKGmdVBJSnqfk4/edit#heading=h.nm9ytp95gaks
+
+
