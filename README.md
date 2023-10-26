@@ -349,5 +349,120 @@ We can achieve this by Photon by designing a door-lock fit mechanism and attach 
 # Intro & Summary
 This week we worked further through our idea! Including both ideation and technical solutions!  
 The detailed project specification is right here: https://docs.google.com/document/d/1IRLeagtgZijVZ8jcxHtoBIZcy9kE9jKGmdVBJSnqfk4/edit#heading=h.nm9ytp95gaks
+and the Figma file showing the ideation process is there: https://www.figma.com/file/QtvoujYCLwyQF9pJV33fz6/Ideation?type=whiteboard&node-id=5%3A36&t=583Ur4PRHsifJNPF-1
+
+
+
+</br>
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 7&8 Report - Week from 10/05 to 10/19/2023
+# Intro & Summary
+During the two weeks, we spent a lot of time developing into the idea and finished up the prototype. I was responsible for all the electrical and circuit parts, and I was helping out a lot on the assembly and testing of the mechanical flower.  
+
+  
+# Progress description
+### Electrical part
+The main circuits involved are the vibrator motor that goes to the wristband, and the servo that goes to the mechanical flower. 
+
+#### Vibrator Motor
+The vibrator motor is fixed on the wristband, with the vibrator motor side facing the skin of the user. Its vibration frequency and intensity increase and decrease to hint at breathing in and breathing out, which also matches the rate at which the flower opens up and closes down.
+
+![image 3](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/fca13136-724b-4e5a-8840-f08eae71aa09)
+
+
+The original circuit of the vibrator is really straightforward: red line to 3.3V and blue line to D7 for digital output. It is basically the same logic as blinking an LED, with D7 shifting between high and low to let the vibrator motor operate or stop. It works fine for initial testing, but since it is a digital output which only allows binary states (on/off), it is difficult to mimic the effect for breathing in and out. Therefore, I wanted to switch to an analogue output for more vibration modes (also I was told to use the DRV2605L Haptic Motor Controller🫣).
+
+
+<img width="500" alt="62GfTF2lolxTpnWn0nJSS4hXOIy5yYQRLsM5LcjZQ_TlsLBCUpSk6r_zRhLIBTUnqjQXeS87O1QqrMkuA3rhgbddMm31ePQS0C-07b1exd-5viFv1JnodAysSiJG6kTrhAy6S2Bya-aQpuEh1XhE-XM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/e526f2ac-d27c-4552-b755-2e2e7bf7c690">
+
+![image](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/cdae9d7d-dce7-4b49-a9cf-3a672542507d)
+
+<img width="500" alt="image 4" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/e403b197-f870-4a61-9d4c-8726c25d905c">  
+
+⬆️The circuit schematic, testing, and the sample code (same as Blink an LED)
+
+After researching and asking for help from the lecturers, I soldered the vibration motor to the Adafruit DRV2605L Haptic Motor Controller and subsequently connected it to the SparkFun Qwiic Shield. Since SparkFun is an add-on shield, I soldered the female headers to it for attachment to the Photon 2. Also, I did some initial tests to make sure the circuit worked before passing this to the programming team.
+
+![image 2](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/6970fd9d-298d-463a-a867-467a7cbb6c21)
+<img width="500" alt="Screenshot 2023-10-23 at 5 43 58 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/6501bd05-4777-400d-bc4b-578d9a75452b">
+
+It took me a while to understand the logic of controlling the vibrator motor through the SparkFun Qwiic Shield since it is not directly connected and controlled through one pin. Thanks to TJ and Sudhu, I got to know the logic behind which is the i2C protocol and now the parts connected to the Qwiic Shield can be easily controlled by the defined part code inside the code. Here is the sample code I got for the vibrator motor:
+
+<img width="500" alt="Screenshot 2023-10-23 at 10 49 22 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/cefc9769-a589-4a05-8836-caa4499ae199">
+
+It is a giant library which contains 123 effects of vibration modes, and we later picked and modified some of the effects to make it match the result we wanted for the vibration wristband. 
+
+
+#### Servo
+The servo directly controls the opening and closing of the mechanical flower. Strings which are attached to the petals are attached to the disk, and the disk subsequently attaches to the servo. Therefore, when the servo rotates, the distance of the strings from the petals gets shorter or longer, which can cause the flower to open/close. 
+
+![IMG_377E9C724E0A-1](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/42c09e6f-c523-4eb2-9cb2-b3b0bac0dd7b)
+![IMG_318C69927AC1-1](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/8a3878ea-47f9-44a0-ae88-750ccdf5cba5)
+
+⬆️When the disk rotates, the string ‘retracts’, shortening the distance and therefore lifts up petals
+
+The circuit of the servo is really straightforward as well: orange wire to D1 (a pin which supports PWM), red wire to 3.3V (or bigger voltage, which will be explained later), and brown wire to ground.
+
+<img width="500" alt="Screenshot 2023-10-23 at 11 03 26 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/84bdb9ad-7735-484b-84fe-1cdf1aa734e4">
+
+Although the circuit seems straightforward, it took me a really long time to test the circuit. All the tutorials I found online used D0 or A1 as the signal pin, and I didn’t rethink the assigned pins when the circuit wasn’t working. I was assuming there were some issues with the code or even the servo instead of me using the wrong signal pin. Then after struggling for one hour, I saw some tutorials mentioning the signal pin must support PWM, then I referred back to the datasheet of Photon 2 and realised the pins I tried didn’t support PWM. Right after I changed to the right pin, the servo worked normally. 
+
+<img width="500" alt="Screenshot 2023-10-23 at 11 19 50 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/740081b5-4823-4a37-884b-6b5209aabdee">
+
+Since the motion required by the servo was to rotate clockwise and anti-clockwise to retract and extend the strings of petals, the code simply needs to command it to rotate back and forth. The sample code is shown below:
+
+<img width="714" alt="Screenshot 2023-10-23 at 11 22 39 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/c7242aeb-f5cd-474d-bbb4-1e44f3b0707f">
+After many tests on the final prototype, I figured out the right angle (which is 90 degrees) to retract the petals in the right amount. I also tweaked the delay in the middle of the motion to make it match our desired pace of breathing.
+
+We also experienced a challenge when using the servo to drive all five layers of petals: the torque provided by the servo wasn’t strong enough to drive all five layers, it was trying to rotate but ended up shaking a bit and then going backwards. I looked up the servo data sheet and realised that it can operate with 6v for bigger torque:
+
+<img width="881" alt="Screenshot 2023-10-23 at 11 49 56 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/2bebf697-e5ee-4bd5-9b94-16f0e90e05bf">
+
+Therefore I tried to fix this situation by using a bigger power supply instead of the 3.3V supplied by the Photon 2, and the circuit schematic looks like this:
+![0a77894b0bb506adea1f135c1df8f970](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/92e8f361-76bb-4d7e-8518-bc7efff4b2e6)
+
+![F5W81DAIUG0UQ57](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/127e75de-436d-40e0-97e9-d66502f42554)
+
+
+The schematic is like this but with brown wire to GND and yellow wire to D1 of Photon 2
+
+However, it was lifting a similar amount of petals as well, as the torque didn’t increase as it was supposed to (should be almost doubled?). As a compromise, we cut the fish wires for the bottom three layers in the end just to have a working prototype.
+
+#### OLED Screen
+Originally, we wanted to use the OLED screen as a display to indicate ‘breathe in’ and ‘breathe out’ for the users right next to the flower, and I did some initial OLED screen research. Also since we already had the Qwiic Shield which makes it a lot easier to control multiple accessories connected to it. However, since our programming team developed a web-based user interface, the laptop screen itself with the button acts as an interface with the instructions showing the screen. This replaces the need of an OLED screen.
+
+![IMG_1BBEC787E916-1](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/df02de98-daec-4b16-b4cf-3e00497b1497)
+The laptop screen shows the instructions for ‘breath in’ & ‘breath out’
+
+
+#### LEDs
+We also wanted to put an LED inside the mechanical flower to provide a better ambience for the meditation experience. It should switch analogously from on to off matching the pace of the mechanical flower. I also made the circuit as well as tested out the code for a breathing LED:
+
+<img width="500" alt="Screenshot 2023-10-23 at 11 36 48 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/5087e280-b27d-45f8-9765-4c1f30fe58af">
+![IMG_7FA04A52F850-1](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/b7e6bec4-b1ac-437a-bdbf-fa65f34bc088)
+However, the LEDs were really tiny and it is really only suitable for signalling, we didn’t go with this in the final design. I also tried to use the Neopixel LED light strip:
+<img width="500" alt="Screenshot 2023-10-23 at 11 56 16 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/e5697e64-c5d7-4581-b321-d11ac46326e4">
+
+I soldered the pins but because I wasn’t able to access a 1000uF capacitor and we were running out of time, we decided to give up on the LED feature in the end.
+
+### Mechanical part
+I actually spent most of the time on the project helping Yuhe with the mechanical flower model. Since she designed the whole mechanical model, I was helping her tweak the design as well as doing the manual and laborious work of assembling the spherical frame as well as petals. 
+
+There were many details of the flower as we did the testing and prototyping. For example, we realised the metal ring joint fixture wasn’t suitable for the design as it was flimsy and the petals would move in all directions instead of just up and down, we switched to zip ties for better joint fixtures as it is flat and easier to use: 
+
+<img width="500" alt="Screenshot 2023-10-24 at 12 02 42 AM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/db03eee0-a511-44ca-80f3-d454966c8afc">
+
+We also spent a lot of time attaching the petals to the fish wires and fixing each petal at the exact location on the wire by glueing. For a better look, we also spray paint the petals white to get rid of the burn marks on the petals of laser cutting. In general, the mechanical flower was really a delicate and detailed prototype, and we spent a lot of time perfecting the small details involved.
+
+
+
+
 
 
