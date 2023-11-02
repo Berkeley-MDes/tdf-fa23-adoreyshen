@@ -464,5 +464,54 @@ We also spent a lot of time attaching the petals to the fish wires and fixing ea
 
 
 
+</br>
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 9 Report - Week from 10/19 to 10/26/2023
+# Intro & Summary
+This week, we were introduced with the new LLM project. I followed the tutorials during the lectures and watched the replay for some parts i was confused. I didn't do much other than catching up with the lecture contents🙈
+
+
+</br>
+</br>
+</br>
+
+
+# Week 10 Report - Week from 10/26 to 11/02/2023
+# Intro & Summary
+This week, we finished the project 3. I finished tweaking MINI Adorey, and made a final demo video.
+
+
+# Progress description
+
+### Overall structure of mini adorey
+I have 6 instructions in total: one about the speaking tone of the bot: I customised it to be chill and with emojis 
+One about my personal info, which is linked to a knowledge set
+One each for project 1 and 2, and the class wiki, each of them is linked to an individual specific knowledge set for the corresponding contents 
+and a welcome messsage instruction!
+
+
+The major problem I encountered when doing this is the token issue
+Initially after inputting all my weekly report and project report, when I asked the bot of some basic questions. The error prompt kept popping out: I didn’t record it the first time but according to the prompt, I’m pretty sure it’s because of the token limit. So I went back and check the tokens taken by my knowledge set: it’s within 5 thousand and the max token limit of gpt4 is about 8200. I was confused but I think this maybe the issue: as all the contents are chunked up in one, it’s taking longer for it to find the right info I need. So I split up the whole chunk of info into 7 pieces: each weekly report is pne piece, I also splinted up the sections of the final project report into parts like speculations, reflections etc, so it’s easier and faster for the bot to fetch the needed info.
+
+
+### tweaking of language 
+
+There is also some tweaking of language. I originally asked for the bot to have some emojis but I realised it’s using a bit too much. I also quantified the word to be around 300 at first, then I realised this is causing the problem of the bot answering questions with similar amount of words for both basic questions and technical questions. This makes the answer too long for a question like who am I, but too short for a question like describing a challenge in project 2. So I added more detailed instruction for word limit for different types of questions, and here it is! It’s now Answering different types of questions with the right amount of details~
+
+
+### Different LLMs
+I also tried using different large language models. The one I’ve been using is gpt 4. And I tried switching to gpt 3.5 turbo. I feel like it is answering questions a bit faster, but the tone and langue’s it similar. I also tried with chat bison 001 but it seems to be confused. It was saying not having access to my info 🫣
+
+### Different Temp
+Finally, I’ve been trying with different temperature. Since this one is related to the creativity of answers. I made the question to be What do you think should be my dream job and what my future life will be like. The one I’ve been using is 0.8, but I also tried tweaking the number to be 1.5 which is supposed to be a lot more random than before, and as you can see it is definitely more random it’s producing words and sentences. I don’t even understand. I also tried making the numbers smaller like the 0.2 and you can tell it’s definitely giving more realistic and less imaginative answers 
+
+
 
 
