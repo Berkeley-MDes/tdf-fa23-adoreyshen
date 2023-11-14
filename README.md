@@ -513,5 +513,37 @@ I also tried using different large language models. The one I’ve been using is
 Finally, I’ve been trying with different temperature. Since this one is related to the creativity of answers. I made the question to be What do you think should be my dream job and what my future life will be like. The one I’ve been using is 0.8, but I also tried tweaking the number to be 1.5 which is supposed to be a lot more random than before, and as you can see it is definitely more random it’s producing words and sentences. I don’t even understand. I also tried making the numbers smaller like the 0.2 and you can tell it’s definitely giving more realistic and less imaginative answers 
 
 
+</br>
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 11 Report - Week till 11/09/2023
+# Intro & Summary
+This week, we started up the final project and we started with the ideation stage on project proposals. 
+
+# Progress description 
+I generally have few ideas:
+1. a smart therapy lamp for SAD patient (seasonal affective disorder) that can detect the distance between the lamp and the user to adjust the light intensity for better user experience.
+2. a plant interation system that can be implemented on a plant for human interaction. The plant can respond with voice and OLED display when people are touching its leaves. It will act as a smart desktop electronic companion.
+
+I will look into more details in terms of the feasibility of the project as well as a potential part list that can be used for this project. My personal preference for now is still the plant one since it can have multiple add-on features. 
+
+Some general researches include using a capative sensor conntected to the plant for it to have a response based on human touch:
+
+![IMG_6385 1](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/8415a904-b9d3-4b30-bede-135ce28d23ef)
+
+and a OLED screen with a speaker for output of the plant:
+![image 5](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/019aad23-8ab6-4cc2-9bcf-28a65ddb58e0)
+
+
+I do believe there are various possibilities with this project with many potential fun features: e.g. soil moisture sensoring for watering reminder, moving plant on a vase for advanced interation, smart response from the plant by integrating with LLM apis.
+
+
+
 
 
