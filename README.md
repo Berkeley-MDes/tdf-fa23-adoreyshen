@@ -546,4 +546,70 @@ I do believe there are various possibilities with this project with many potenti
 
 
 
+</br>
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 12 Report - Week till 11/16/2023
+# Intro & Summary
+This week, I finallised my final project idea and started to buy components for prototyping.
+
+# Progress description 
+Surprise surprise Lmao I didn't go with any of the suggestions above and decided to do an alone project of a curtain robot. It's basically mimicing the functions of something like this:
+
+
+
+https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/4be30f91-349a-4bc6-b449-efb42333dab6
+
+I lookede through a bunch of YouTube videos doing testing of the existing products in the market, and I think the internal parts of this kind of robots are pretty straightforward, it has:
+a dc motor as the major wheel to go across the rod;
+<img width="508" alt="Screenshot 2023-11-30 at 1 28 01 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/3f09b572-bac8-4b76-b464-317721e8b915">
+
+a hall effect sensor and few tiny magnets on the wheel to keep track of how many revelotions it went; (i watched a bunch of YouTube videos to figure out the mechanism of hall effect sensors, there're actually super cool!)
+<img width="651" alt="Screenshot 2023-11-30 at 1 28 41 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/dcbe21d2-ee8f-4720-969d-da5e6ad9e9a1">
+
+a receiver (normally controlled through internet or bluetooth);
+and a smart mechanical design part of the hook to make it the right tension for the bot to move.
+
+
+### Motor
+So to do a step-down for my project, i had three ideas of the motor, and i want to ask for help today during the consulting session:
+1. DC motor with a tiny magnet+hall effect sensor, or just use a motor shield to control the rpm. also, does it know how many revolutions it goes?
+2. Stepper motors? Cuz they're more acurate and stronger, but heavier and more difficult to control
+3. or should i do distance sensors (like ultrasonic sensors on both sides, or just other types of mechanical triggers) or just hard code with the rpm feedback from the dc motor/motor shield
+
+## Remote function
+Since the bot should be high up in the reality, a remote control would be ideal instead of pushing the button manually on the bot. So i decided to go with an IR receiver with a remote control (tutorial: https://www.youtube.com/watch?v=0DgALFDwouA). I've placed the order on Amazon already!
+
+Looking forward to the testing stage!!!
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 13 No Report - Week till 11/23/2023 - Happy Thanksgiving holidays yay!!!
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 14 Report - Week till 11/30/2023
+# Intro & Summary
+It's almost final week, I am a bit running out of time of the final project 🥲. I've been working hard since I am back from thanksgiving holiday, and there's what i've done so far:
+
+# Progress description 
+
+
+
+
+
 
