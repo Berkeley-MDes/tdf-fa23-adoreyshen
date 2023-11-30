@@ -607,9 +607,57 @@ Looking forward to the testing stage!!!
 It's almost final week, I am a bit running out of time of the final project 🥲. I've been working hard since I am back from thanksgiving holiday, and there's what i've done so far:
 
 # Progress description 
+## Motor + Trigger
+After previous discussion with instructors, I decided to go with dc motor + physical triggers! A self-made hall-effect sensor with magnets can be difficult to calibrate, and can easily fail... And a stepper motor just seems like it's a bit over-qualified for the job! Also stepper motor is a bit heavy so I am worried about the weight the bot can carry.
+
+So the final decision is a dc motor (TT motor provided by TJ (Thx!😀)) with two limit switches on the side. So when the bot moves till the end, the limit switch will be triggered by the wall to let the bot know to stop moving.
+
+I've used a doubler to make it vertically more compact and a DC Motor feather wing to control the motor:
+
+<img width="489" alt="Screenshot 2023-11-30 at 1 40 19 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/f7856d3b-7057-4a7b-835c-5f17b17172e5">
+
+And after a lot of help from Sudhu and lots of struggling from myself, there's the first successful testing video: the dc motor will stop rotating when the limit switch is triggered:
 
 
 
+https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/292352a7-e76f-4d3c-b1ee-536db68ae383
 
+
+
+## Remote control (aka downgraded physical button right now)
+After I received my Amazon package of the IR receiver and the remote control, I did the testing right away following a tutorial on Arduino. Unfortunately, I can't manage to figure the library file out, it seems like the library is not supported by Photon 2. I did a bit of consulting with Shm and tried few methods but it still didn't work out😖
+
+![image_720](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/8e5aac1f-23e0-4daa-bf5d-3e65734f643f)
+
+So instead of being strucked at the beginning, I decided to go with the simpler version of control - physically buttons - right now.
+
+So the idea of control is basically, when "going left" button is pressed, the motor goes to the left, until it hits the wall on the left (which is when the left limit switch is triggered), and when "going right" button is pressed, the motor goes to the right, until it hits the wall on the right (which is when the right limit switch is triggered).
+
+The logic seems easy, but I've got four different switches to control one motor, and lots of bugs did happen during the testing (sometimes just because of an unhappy pin!(same code same connection, but when i changed to a different pin, it worked...)), here's the thing that FINALLY WORKS!
+
+
+
+https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/8af8a508-7126-4c57-a778-43b9cab13be3
+
+
+## Mechanical shell design
+I need a physical shell to contain all these eletronics above, so I started the simple cading of a shell that can contain all the conponenets inside:
+
+<img width="902" alt="Screenshot 2023-11-30 at 1 54 31 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/0909428f-49db-499f-bbaf-05c1ba6670fe">
+
+This is the original CAD that's supposed to be 3D printed. The dimensions are tailored around the actual dimension of the components. The holes are left for the wires to go through. I haven't started the arm design yet.
+
+Unfortunately... with everyone's final coming, I can't find a single 3D printer available for used... And my design does requires iterations to test for the tolerences...I decided to go with laser cutting. I basically used the (almost) same design, but sliced them into multiple layers:
+
+<img width="666" alt="Screenshot 2023-11-30 at 1 58 39 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/28e989c1-b863-47b6-a5be-303e5fc16012">
+
+I also left some tiny holes for the zip times to go through to fix the dc motor in position.
+
+<img width="401" alt="Screenshot 2023-11-30 at 1 59 00 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/889ae229-25ea-4899-9392-409e970f2680">
+
+
+I've cut it out and glued the layers together, but i forgot to take a picture...
+
+I'll put more update of progress here!
 
 
