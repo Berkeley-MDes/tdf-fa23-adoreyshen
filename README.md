@@ -661,3 +661,112 @@ I've cut it out and glued the layers together, but i forgot to take a picture...
 I'll put more update of progress here!
 
 
+
+</br>
+</br>
+</br>
+</br>
+
+
+# Week 15 Report - Week till 12/7/2023
+# Intro & Summary
+This week I worked really hard and finished the project! There's my final project description!
+
+# Progress description 
+### Mechanical
+The mechanical part covers the design of the physical body of the bot. It is mainly the ‘shell’ that fits all the electronic components, the hook at the top of the bot that goes to the curtain rod, and the wheel that pressure fits the TT motor.
+
+<img width="1093" alt="Screenshot 2023-12-09 at 11 38 20 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/da9be9a3-59c4-4147-9f93-d6c909440d64">
+
+
+#### Physical Body - the ‘Shell’
+The idea of the physical body is light, compact and capable of fitting in every electronic component. Originally, I wanted to 3D print the body and drafted the CAD aiming for 3D printing. I measured all electronic components and made specific CADs for each of them (the blocks) so I could assemble everything in the ‘shell’ to see whether they fit. Here’s a screenshot of my original CAD model for 3D printing:
+
+<img width="1103" alt="Screenshot 2023-12-09 at 11 44 12 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/27f1047b-b2a3-4c61-b4de-4853878cd694">
+
+
+However, all the 3D printers were super busy in the maker space as everyone was busy with their finals, I had to switch to a different approach: laser cutting. I basically sliced my previous 3D print CAD model into four layers, laser cut four layers and glued them together:
+
+<img width="1028" alt="Screenshot 2023-12-09 at 11 48 00 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/0129d629-c431-466d-a808-be07f37fbd67">
+
+Here’s the laser-cut sketch. I also included some details like space left for zip ties to secure the motor in place, they’re super helpful.
+
+
+<img width="1098" alt="Screenshot 2023-12-09 at 11 48 31 PM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/a2d24a1c-38d6-45ce-99d7-e5db934e3d84">
+
+Although it’s a little bit heavier and bulkier than 3D print, the laser-cutting process is so much faster, and did a fairly great job as well!
+
+#### Hook
+Similarly, the hooks were made with four layers of laser-cut plywood as well. Originally, the idea of the hook should have two rollers at the bottom side to decrease the friction. The size of the hook should match perfectly with the diameter of the curtain rod and the wheel size. So I made the hook in the exactly dimension to give some space for tolerance.
+
+
+<img width="895" alt="Screenshot 2023-12-10 at 12 04 49 AM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/d535ba83-bd36-467a-aa4a-3b0656854f67">
+
+
+
+However, due to the limited time I had and because the whole structure was laser cut and glued together, it was difficult to achieve it with the rollers. I eventually gave up on the rollers, but added some smooth paper tape on the bottom of the hook to decrease the friction.
+
+#### The Wheel
+The wheel needs to match perfectly with the extrusion bit of the TT motor:
+
+
+<img width="933" alt="Screenshot 2023-12-10 at 12 11 37 AM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/77aea2c6-e552-4626-b3fc-9b463be5e6a6">
+
+
+The wheel was 3D printed as it was a smaller part so it only took a short time to print it out. I test-printed a few partial CAD models to see whether the tolerance worked with the extrusion bit before I printed the final version. The 3D-printed wheel also has a tiny amount of difference from the actual defined version probably due to the heat expansion. 
+
+After figuring out and printing out the wheel with the right dimension and pressure fit to the DC motor, I added some rubber bands on the side of the wheel to increase the friction. After many other tests with the whole thing on the curtain rod, I replaced the rubber band with electrical tape. I also added some electrical tape The final look of the whole mechanical part looks like this:
+
+<img width="1097" alt="Screenshot 2023-12-10 at 12 19 41 AM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/f5d8220a-b905-4fc9-8594-1f4ebad86a34">
+
+
+
+### Electrical
+The electrical parts include: DC (TT) motor, two limit switches, two control buttons, Photon 2, motor shield, doubler, a switch button for Photon, battery box for motor, lithium battery for Photon, and a soldered breadboard.
+
+
+<img width="821" alt="Screenshot 2023-12-10 at 12 23 15 AM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/79429fab-0e34-486f-9af2-16c4de5efcfe">
+
+
+
+In general, every electronic component was there to control the DC motor. The DC motor connects to the motor shield and is directly controlled by the built-in library. An external power supply (the battery box) directly feeds power to the motor shield to power the DC motor. To add on to the direct control, the switches were added to define the scenarios of the behaviour of the motor. Four pins were assigned to four switches.
+
+The photon 2 and the motor shield are connected together by a doubler. It is effectively doing the job of connecting them on top of each other but remaining parallel next to each other in one layer. The small little lithium battery is there to power the photon 2, and I also used the designated switch for photon so it’s a lot easier than plugging and unplugging the battery. 
+
+Since the Curtain Bot needs to move around, all the circuits need to be secure. Therefore, lots of soldering was done. I replaced the temporary breadboard with a soldered permanent breadboard after testing the circuits. I also tried to make the circuits as compact as possible.
+
+<img width="1102" alt="Screenshot 2023-12-10 at 12 35 07 AM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/a8fc0e53-00e3-470c-b71c-d1e24f4ee9c7">
+
+
+
+### Programming
+Overall, the idea is to use the states of the switches to control the motion of the wheel. I did all the simple testing of each component and then tried to combine them. For example, I first did the testing of the motor going forward and backwards, and the serial monitor showed the state of each button switch and limit switch when pressed (simple testing of individual components). 
+
+Here’re the tests I went through before combining them all together:
+
+<img width="369" alt="Screenshot 2023-12-10 at 1 52 53 AM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/4adb7811-3d59-43e2-be5e-5c1888b5305a">
+
+After that,  I tried to combine the motor code with the limit switch code. With a lot of help from Sudhu, we figured out the logic of the code in pseudocode like this:
+
+![IMG_7386](https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/2ca39111-6f31-44f0-a245-417462438e95)
+
+
+And here’s the main logic of my final code:
+
+<img width="559" alt="Screenshot 2023-12-10 at 1 40 53 AM" src="https://github.com/Berkeley-MDes/tdf-fa23-adoreyshen/assets/143139247/d15fd58a-6b17-446f-9af7-aa06398f5fe4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
